@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TODO-APP</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+ <section class="g_list">
+   <h2>To do list <i class="fa-solid fa-list"></i></h2>
+   <div class="add_to_list">
+     <input id="target" placeholder="Add to your list"><i id="add_btn" class="fa-solid fa-plus"></i>
+   </div>
+   <div class="alert">Click on <i class="fa-solid fa-plus"></i> to add to your list</div>
+   <div class="task_tab">
+     <p class="active"  id="all">All</p>
+     <p id="pending">Pending</p>
+     <p id="completed">Completed</p>
+     <button id="deleteAll" >Clear All</button>
+   </div>
+   <hr>
+   <div class="list">
+     <ul class="to_do" id="list">
+ 
+  
+     </ul>
+   </div>
+ </section>
+ 
+ </main>
+</body>
+</html>
+<script src="index.js"></script>

@@ -1,0 +1,185 @@
+*{
+  margin: 0;
+  
+  box-sizing: border-box;
+font-family: 'PT Sans', sans-serif;
+}
+:root{
+  --primary-color:#EBEEDD;
+  --text:#0D0E0E;
+  --secondary:#292B2B;
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+main{
+  background: var(--primary-color);
+overflow: auto;
+  padding-top: 2em;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  max-width: 450px;
+  
+}
+h2{
+  text-align: center;
+ margin: .4em auto .7em;
+  font-size: 41px;
+font-family: 'PT Sans', sans-serif;
+}
+.add_to_list{
+  display: flex;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  justify-content:space-between;
+  align-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 0.5em 1em;
+  border-radius: 1.6em;
+box-shadow: 0 0 2px #333;
+}
+.add_to_list > input{
+  width:85%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0 0em;
+ 
+
+}
+.add_to_list > .fa-plus{
+  background: var(--primary-color);
+  padding: .2em .3em;
+  border-radius: 50%;
+  font-size: 18px;
+}
+.alert{
+  text-align: center;
+  font-size: 0.7em;
+  margin:.5em auto 0 ;
+  text-transform: lowercase;
+  opacity: 0.5;
+}
+
+.task_tab{
+  display: flex;
+  text-align: center;
+  padding:  0.5em 1em;
+position: relative;
+  align-items:center;
+  margin-bottom: .3em;
+}
+.task_tab > p{
+  font-size: .9em;
+  font-weight: 200;
+  
+  margin: 0 .5em;
+}
+hr{
+  height: 1px;
+  
+}
+.task_tab p.active{
+  transform: scale(1.1);
+  font-weight: 700;
+ 
+}
+.task_tab button{
+  float: right;
+  position: absolute;
+  right: 5%;
+  background: #3c87ff;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #fff;
+  padding: .3em .5em;
+  border-radius: .5em;
+}
+.task_tab button:active{
+  background: red;
+ 
+}
+.list i.fa-trash:active{
+  color: red;
+  transform: scale(1.1);
+}
+.list{
+  background: transparent;
+  margin: 0.2em auto .5em;
+  padding: 0;
+}
+.list ul{
+  text-decoration: none;
+  list-style: none;
+  padding: 0.1em;
+  text-align: center;
+}
+.checked{
+  text-decoration: line-through;
+}
+.list ul li{
+  background: #fff;
+  width: 90%;
+  margin:0.5em auto 0.8em;
+  padding: 0.6em;
+  border-radius:0 .5em .5em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 0 0 0.5px #333;
+}
+.list ul li label{
+  background: #fff;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.list ul li label input[type="checkbox"]{
+  width: 1.5em;
+  height: 1.5em;
+  display: block;
+  flex-basis: 15%;
+  outline: none;
+}
+.list ul li label span{
+  flex-basis: 80%;
+  text-align: start;
+}
+.list ul span{
+  text-align: center;
+}
+li:before{
+ content: "";
+ position: absolute;
+ width: 0.15em;
+ height: 100%;
+ background-color: green;
+ left: -0.15em;
+ border-radius: 0.5em;
+}
+
+@media(min-width:800px){
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background: linear-gradient(rgb(10, 132, 188),rgb(10,132,188));
+ 
+ height: 100vh;
+  }
+  main{
+    max-height: 70vh;
+    overflow-y: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px  #333;
+  }
+}
